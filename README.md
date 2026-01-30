@@ -1,54 +1,45 @@
 # Netwatch-Pro
-🛡️ NetWatch Pro – Network Monitoring for Windows
+# 🛡️ NetWatch Pro – Modern Network Monitoring for Windows
 
-A clear and intuitive tool to monitor your home network with AI-powered anomaly detection.
+NetWatch Pro is a simple and local network monitoring tool for Windows with AI-assisted anomaly detection.  
+It shows all devices in your local network, tracks their online status, and provides live statistics.
 
-📋 Features
+---
 
-Network Overview
+## 📋 Features
 
-Displays all devices on your local network
+- **Network Overview**
+  - Lists all devices in your local network
+  - Detects new and vanished devices automatically
+  - Estimates bandwidth usage (for anomaly detection)
 
-Automatically detects new and disconnected devices
+- **Device Monitoring**
+  - Live online/offline status
+  - Packets sent/received
+  - Uptime percentage
 
-Estimates bandwidth usage per device
+- **Technical**
+  - Modern, user-friendly GUI built with Tkinter
+  - Fully local processing (no cloud required)
+  - Optimized for Windows systems
 
-AI-based detection of unusual network activity
+---
 
-Technical Details
+## 💻 System Requirements
 
-Modern, user-friendly interface
+- Windows 10 or higher
+- Administrator privileges for full functionality
+- Active network connection
+- Python 3.8+ (for building EXE)
 
-All data is processed locally (no cloud connections)
+---
 
-Optimized for Windows systems
+## 🚀 Installation
 
-🔒 Legal Notice
-
-⚠️ Important: This tool is intended for use only on your own network. Monitoring other networks without permission is illegal.
-
-💻 System Requirements
-
-Windows 10 or higher
-
-Administrator privileges for full functionality
-
-Active network connection
-
-🚀 Installation
-
-Download NetWatchPro_Setup.exe
-
-Run the setup file as Administrator
-
-Follow the installation instructions
-
-Launch NetWatch Pro
-
-📊 Usage Notes
-
-Bandwidth values shown are estimates intended primarily for detecting anomalies in network traffic, not for exact measurement.
-
-🆘 Support
-
-For questions or issues, please provide feedback via the appropriate channels.
+### From Source
+```bash
+git clone https://github.com/YOURUSERNAME/Netwatch-Pro.git
+cd Netwatch-Pro
+python -m pip install --upgrade pip
+python -m pip install pyinstaller
+python -m PyInstaller --onefile --windowed --name=NetWatchPro netwatch_pro.py
